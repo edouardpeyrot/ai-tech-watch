@@ -1,0 +1,9 @@
+certifi
+charset-normalizer
+idna
+Jinja2
+MarkupSafe
+python-dotenv
+PyYAML
+requests
+urllib3
