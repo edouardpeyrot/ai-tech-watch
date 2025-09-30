@@ -36,7 +36,7 @@ system_prompt: |
   - "title" = concise name of the technology or business event.
   - "summary" (inside details) = explanation from 100 to 500 words.
   - "source" = exact URL of the article or reference site. Double check if the URL is correctly redirecting to the article.
-  - "date" = publication date of the source (YYYY-MM-DD hh:mm).
+  - "date" = publication date of the source (YYYY-MM-DD hh:mm). For every article, search another source to confirm the date.
   - "image" = URL of a relevant image already published on the internet 
               (e.g. official press release, product logo, corporate blog illustration).
   - No speculation or personal opinion.
