@@ -44,12 +44,8 @@ jobs:
           --add-data "error.j2:." \
           --add-data "config.yaml:." \
           --hidden-import=yaml \
-          --hidden-import=_yaml \
-          --hidden-import=yaml.loader \
-          --hidden-import=yaml.dumper \
-          --collect-all jinja2 \
-          --collect-all yaml \
-          --collect-all dotenv \
+          --hidden-import=dotenv\
+          --hidden-import=jinja2 \
           main.py
 
     - name: Build executable with PyInstaller (Windows)
@@ -61,12 +57,8 @@ jobs:
           --add-data "error.j2;." `
           --add-data "config.yaml;." `
           --hidden-import=yaml `
-          --hidden-import=_yaml `
-          --hidden-import=yaml.loader `
-          --hidden-import=yaml.dumper `
-          --collect-all jinja2 `
-          --collect-all yaml `
-          --collect-all dotenv `
+          --hidden-import=dotenv`
+          --hidden-import=jinja2 `
           main.py
 
     - name: Rename executable (Linux/macOS)
