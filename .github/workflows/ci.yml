@@ -43,7 +43,7 @@ jobs:
           --add-data "email.j2:." \
           --add-data "error.j2:." \
           --add-data "config.yaml:." \
-          --hidden-import=yaml \
+          --hidden-import=pyyaml \
           --hidden-import=dotenv\
           --hidden-import=jinja2 \
           main.py
@@ -56,7 +56,7 @@ jobs:
           --add-data "email.j2;." `
           --add-data "error.j2;." `
           --add-data "config.yaml;." `
-          --hidden-import=yaml `
+          --hidden-import=pyyaml `
           --hidden-import=dotenv`
           --hidden-import=jinja2 `
           main.py
