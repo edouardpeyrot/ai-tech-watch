@@ -57,7 +57,7 @@ jobs:
           --add-data "error.j2;." `
           --add-data "config.yaml;." `
           --hidden-import=pyyaml `
-          --hidden-import=dotenv`
+          --hidden-import=dotenv `
           --hidden-import=jinja2 `
           main.py
 
