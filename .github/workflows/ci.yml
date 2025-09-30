@@ -43,6 +43,10 @@ jobs:
           --add-data "email.j2:." \
           --add-data "error.j2:." \
           --add-data "config.yaml:." \
+          --hidden-import=yaml \
+          --hidden-import=_yaml \
+          --hidden-import=yaml.loader \
+          --hidden-import=yaml.dumper \
           --collect-all jinja2 \
           --collect-all yaml \
           --collect-all dotenv \
@@ -56,6 +60,10 @@ jobs:
           --add-data "email.j2;." `
           --add-data "error.j2;." `
           --add-data "config.yaml;." `
+          --hidden-import=yaml `
+          --hidden-import=_yaml `
+          --hidden-import=yaml.loader `
+          --hidden-import=yaml.dumper `
           --collect-all jinja2 `
           --collect-all yaml `
           --collect-all dotenv `
