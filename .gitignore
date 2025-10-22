@@ -1,2 +1,5 @@
 .env
 *-amd64
+*.tfvars
+env.hcl
+infra/env/*

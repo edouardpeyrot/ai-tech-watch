@@ -7,3 +7,11 @@ python-dotenv
 PyYAML
 requests
 urllib3
+huggingface_hub
+torch
+transformers
+fastapi
+pydantic
+protobuf
+sentencepiece
+accelerate
